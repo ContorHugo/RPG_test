@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fantasy RPG</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="topRow">
+                <div id="playerStats" class="stats">
+                    <span class="healthLabel">HEALTH</span>
+                    <br>
+                    <div class="hpBorder">
+                        <div id="playerHP" class="hpBar">
+                        </div>
+                    </div>
+                    <p id="playerMoves">
+                    <span class="healthLabel">MOVES</span>
+                    
+                    <button onclick="attack()">Attack</button>
+                    <button onclick="dodge()">Dodge</button>
+                    <button onclick="heal()">Heal</button>
+                    </p>
+                    
+                </div>
+            
+                <div id="player" class="charachter">
+                    <img src="/img_rpg/link.png">
+                </div>
+                <div id="boss" class="charachter">
+                    <img src="/img_rpg/evil_knight.png">
+                </div>
+                    <div id="bossStats" class="stats">
+                        <span class="healthLabel">HEALTH</span>
+                    <br>
+                    <div class="hpBorder">
+                        <div id="bossHP" class="hpBar">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomRow">
+                <h2><p> Welcome to the Dungeon Battle Game !</p></h2>
+                <h4><p> You will have to defeat the Evil knight to keep going.</p></h4>
+                    <button onclick="beginBattle()" id="begin">Ready for Battle !</button>
+        </div>
+    <script src="/gamelogic.js"></script>
+    </body>
+</html>
